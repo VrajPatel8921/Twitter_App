@@ -1,33 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import conf from './conf/conf'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  console.log(conf.appwriteUrl)
+  console.log(conf.appwriteProjectId)
+  console.log(conf.appwriteDatabaseId)
+  console.log(conf.appwriteCollectionId)
+  console.log(conf.appwriteBucketId)
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1> A Twitter App With AppWrite</h1>
     </>
   )
 }
