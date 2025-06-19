@@ -147,7 +147,9 @@ export class DatabaseService {
 
 }
 
+const appwriteService=new DatabaseService();
 
-export default new DatabaseService();
+
+export default appwriteService;
 
 
