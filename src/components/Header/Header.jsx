@@ -41,13 +41,13 @@ const Header = () => {
   return (
     <header className="py-3 shadow bg-black text-white">
       <Container>
-        <nav className="flex items-center">
+        <nav className="flex justify-between items-center">
           <div className="mr-6">
             <Link to="/">
               <Logo width="40px" /> {/* Typically small logo like X */}
             </Link>
           </div>
-          <ul className="flex ml-auto gap-2 text-sm">
+          <ul className="flex ml-auto  gap-2 text-sm">
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>
